@@ -7,7 +7,7 @@ import {Client} from '../interfaces/Client'
 })
 export class ClientService {
 
-  URI = 'http://169.48.255.194:30632/api/clients'
+  URI = 'http://169.48.255.194:30944/api/clients'
 
   constructor(private http: HttpClient) { }
 
