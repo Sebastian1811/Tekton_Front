@@ -19,7 +19,7 @@ spec:
         description: the ibmcloud registry namespace
       - name: imageName
         description: the base image name
-        default: "frontend-image-tekton"
+        default: "frontend-app"
       - name: registryRegion
         description: the ibmcloud registry region
   workspaces:
