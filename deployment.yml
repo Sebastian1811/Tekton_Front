@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend-app
-          image: us.icr.io/production/frontend-app
+          image: us.icr.io/clients-space/frontend-app
           ports:
             - containerPort: 80
             - containerPort: 443
