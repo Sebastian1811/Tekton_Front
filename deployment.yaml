@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend-app
-          image: frontend-app
+          image: us.icr.io/production/frontend-app
           ports:
             - containerPort: 80
             - containerPort: 443
@@ -36,4 +36,4 @@ spec:
       protocol: TCP
       name: https
   selector:
-    app: tekton-app
+    app: frontend-app
