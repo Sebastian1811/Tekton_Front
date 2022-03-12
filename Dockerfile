@@ -18,6 +18,7 @@ WORKDIR /usr/src/app
 COPY package.json .
 RUN npm install -g
 COPY . .
+RUN npm install -g @angular/cli@latest
 RUN npm run build
 
 # Angular app server
