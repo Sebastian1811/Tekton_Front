@@ -22,7 +22,7 @@ RUN npm install -g @angular/cli@13.1.1
 RUN npm run build
 
 # Angular app server
-FROM nginx:latest
+FROM nginx:1.20.2
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=frontend /usr/src/app/dist/frontend /usr/share/nginx/html
 
