@@ -21,11 +21,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-app
+  name: lb-frontend
   labels:
-    app: frontend-app
+    app: lb-frontend
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 80
